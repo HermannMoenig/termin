@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Einen Moment …</title>
+<style>
+  body{margin:0;background:#fff;font-family:Arial,Helvetica,sans-serif;color:#555}
+  .box{max-width:420px;margin:80px auto;padding:0 16px;text-align:center}
+  .kreis{width:38px;height:38px;margin:0 auto 18px;border:4px solid #e3e3e3;border-top-color:#2f7d4f;border-radius:50%;animation:dreh .9s linear infinite}
+  @keyframes dreh{to{transform:rotate(360deg)}}
+  a{color:#2f7d4f}
+  .fuss{margin-top:40px;font-size:13px;color:#888}
+</style>
+</head>
+<body>
+<div class="box">
+  <div class="kreis"></div>
+  <p>Einen Moment bitte …</p>
+  <noscript><p>Bitte JavaScript aktivieren oder <a href="https://script.google.com/macros/s/AKfycbyvJ1Ax2RX8PGWp1TptYjgQFld5SGLypb2wak3Q-uNDv96LsobBz7JWqB_2Hag6Mluz_w/exec">hier weiter</a>.</p></noscript>
+  <p class="fuss">Hermann Mönig · KI-Beratung</p>
+</div>
+<script>
+  /* Weiterleitung zur Terminbuchung (Vertriebs-Engine). Alle Angaben hinter dem „?“ werden mitgenommen. */
+  location.replace("https://script.google.com/macros/s/AKfycbyvJ1Ax2RX8PGWp1TptYjgQFld5SGLypb2wak3Q-uNDv96LsobBz7JWqB_2Hag6Mluz_w/exec" + (location.search || ""));
+</script>
+</body>
+</html>
